@@ -5,6 +5,7 @@ import {
   Text,
   View,
   TouchableWithoutFeedback,
+  TouchableOpacity,
   Image,
   SafeAreaView,
 } from "react-native";
@@ -25,15 +26,16 @@ export default function App() {
           style={{ width: 100, height: 100 }}
         />
       </TouchableWithoutFeedback>
-
-      <Image
-        source={{
-          width: 100,
-          height: 100,
-          blurRadius: 10,
-          uri: "https://picsum.photos/200",
-        }}
-      />
+      <TouchableOpacity onPress={handlePress}>
+        <Image
+          source={{
+            width: 100,
+            height: 100,
+            blurRadius: 10,
+            uri: "https://picsum.photos/200",
+          }}
+        />
+      </TouchableOpacity>
       <StatusBar style="auto" />
     </SafeAreaView>
   );
