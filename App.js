@@ -12,11 +12,15 @@ export default function App() {
         Hello, this is longer size text to check what happens when we add long
         text !
       </Text>
-      <Image source={require("./assets/icon.png")} />
+      <Image
+        source={require("./assets/icon.png")}
+        style={{ width: 100, height: 100 }}
+      />
       <Image
         source={{
           width: 100,
           height: 100,
+          blurRadius: 10,
           uri: "https://picsum.photos/200",
         }}
       />
