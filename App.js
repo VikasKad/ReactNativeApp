@@ -17,7 +17,7 @@ export default function App() {
     console.log("button pressed");
   };
   return (
-    <SafeAreaView style={styles.container}>
+    <SafeAreaView style={containerStyle}>
       <Text numberOfLines={1} onPress={handlePress}>
         Hello, this is longer size text to check what happens when we add long
         text !
@@ -51,6 +51,7 @@ export default function App() {
       />
       <Button
         title="Prompt button"
+        style={containerStyle}
         onPress={() => {
           Alert.prompt("prompt title", "Prompt message", (text) => {
             console.log(text);
@@ -60,12 +61,19 @@ export default function App() {
     </SafeAreaView>
   );
 }
-
+const containerStyle = {
+  flex: 1,
+  backgroundColor: "#fff",
+  alignItems: "center",
+  justifyContent: "center",
+  backgroundColor: "orange",
+};
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center",
+    backgroundColor: "orange",
   },
 });
