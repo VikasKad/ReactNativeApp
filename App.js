@@ -1,6 +1,6 @@
 import { StatusBar } from "expo-status-bar";
 import React from "react";
-import { StyleSheet, Text, View, SafeAreaView } from "react-native";
+import { StyleSheet, Text, View, Image, SafeAreaView } from "react-native";
 
 export default function App() {
   const handlePress = () => {
@@ -12,6 +12,7 @@ export default function App() {
         Hello, this is longer size text to check what happens when we add long
         text !
       </Text>
+      <Image source={require('./assets/icon.png')} />
       <StatusBar style="auto" />
     </SafeAreaView>
   );
