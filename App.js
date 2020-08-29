@@ -4,10 +4,10 @@ import { StyleSheet, View } from "react-native";
 
 export default function App() {
   return (
-    <View style={{ backgroundColor: "dodgerblue", flex: 1 }}>
-      <View style={{ backgroundColor: "red", flex: 2 }} />
-      <View style={{ backgroundColor: "gold", flex: 0.5 }} />
-      <View style={{ backgroundColor: "tomato", flex: 1 }} />
+    <View style={{ backgroundColor: "dodgerblue", width: 100, height: 100 }}>
+      <View style={{ backgroundColor: "red", width: 100, height: 100 }} />
+      <View style={{ backgroundColor: "gold", width: 100, height: 100 }} />
+      <View style={{ backgroundColor: "tomato", width: 100, height: 100 }} />
     </View>
   );
 }
