@@ -59,6 +59,7 @@ export default function App() {
           });
         }}
       />
+      <View style={{ backgroundColor: "blue", width: '50%', height: '15%' }}></View>
     </SafeAreaView>
   );
 }
