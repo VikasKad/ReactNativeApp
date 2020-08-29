@@ -8,6 +8,7 @@ import {
   TouchableOpacity,
   Image,
   SafeAreaView,
+  Button,
 } from "react-native";
 
 export default function App() {
@@ -37,6 +38,7 @@ export default function App() {
         />
       </TouchableOpacity>
       <StatusBar style="auto" />
+      <Button title="click me" color="orange" />
     </SafeAreaView>
   );
 }
