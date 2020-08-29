@@ -10,6 +10,7 @@ import {
   SafeAreaView,
   Button,
   Alert,
+  Platform,
 } from "react-native";
 
 export default function App() {
@@ -63,17 +64,18 @@ export default function App() {
 }
 const containerStyle = {
   flex: 1,
-  backgroundColor: "#fff",
-  alignItems: "center",
-  justifyContent: "center",
-  backgroundColor: "orange",
+  // backgroundColor: "#fff",
+  // alignItems: "center",
+  // justifyContent: "center",
+  // backgroundColor: "orange",
 };
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-    backgroundColor: "orange",
+    // alignItems: "center",
+    // justifyContent: "center",
+    // backgroundColor: "orange",
+    paddingTop: Platform.OS === "android" ? 20 : 0,
   },
 });
