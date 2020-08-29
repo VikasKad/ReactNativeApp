@@ -40,7 +40,7 @@ export default function App() {
       </TouchableOpacity>
       <StatusBar style="auto" />
       <Button
-        title="click me"
+        title="Alert button"
         color="orange"
         onPress={() =>
           Alert.alert("My title", "My Message", [
@@ -48,6 +48,14 @@ export default function App() {
             { text: "No", onPress: () => console.log("No pressed") },
           ])
         }
+      />
+      <Button
+        title="Prompt button"
+        onPress={() => {
+          Alert.prompt("prompt title", "Prompt message", (text) => {
+            console.log(text);
+          });
+        }}
       />
     </SafeAreaView>
   );
