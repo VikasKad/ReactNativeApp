@@ -9,6 +9,7 @@ import {
   Image,
   SafeAreaView,
   Button,
+  Alert,
 } from "react-native";
 
 export default function App() {
@@ -38,7 +39,16 @@ export default function App() {
         />
       </TouchableOpacity>
       <StatusBar style="auto" />
-      <Button title="click me" color="orange" />
+      <Button
+        title="click me"
+        color="orange"
+        onPress={() =>
+          Alert.alert("My title", "My Message", [
+            { text: "Yes", onPress: () => console.log("yes pressed") },
+            { text: "No", onPress: () => console.log("No pressed") },
+          ])
+        }
+      />
     </SafeAreaView>
   );
 }
