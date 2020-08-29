@@ -17,7 +17,7 @@ export default function App() {
     console.log("button pressed");
   };
   return (
-    <SafeAreaView style={containerStyle}>
+    <SafeAreaView style={[containerStyle, styles.container]}>
       <Text numberOfLines={1} onPress={handlePress}>
         Hello, this is longer size text to check what happens when we add long
         text !
