@@ -13,8 +13,18 @@ import {
   Dimensions,
   Platform,
 } from "react-native";
+import {
+  useDimensions,
+  useDeviceOrientation,
+} from "@react-native-community/hooks";
+
 
 export default function App() {
+
+  console.log(useDimensions());
+  console.log(useDeviceOrientation());
+
+  
   const handlePress = () => {
     console.log("button pressed");
   };
