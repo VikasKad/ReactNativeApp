@@ -18,13 +18,11 @@ import {
   useDeviceOrientation,
 } from "@react-native-community/hooks";
 
-
 export default function App() {
-
   console.log(useDimensions());
   console.log(useDeviceOrientation());
 
-  
+  const { landscape } = useDeviceOrientation();
   const handlePress = () => {
     console.log("button pressed");
   };
@@ -71,7 +69,11 @@ export default function App() {
         }}
       />
       <View
-        style={{ backgroundColor: "blue", width: "50%", height: "15%" }}
+        style={{
+          backgroundColor: "blue",
+          width: "50%",
+          height: landscape ? "100%" : "30%",
+        }}
       ></View>
     </SafeAreaView>
   );
