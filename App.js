@@ -11,6 +11,8 @@ export default function App() {
         flexDirection: "row",
         justifyContent: "center",
         alignItems: "center",
+        alignContent: "center",
+        flexWrap: "wrap",
       }}
     >
       <View style={{ backgroundColor: "red", width: 100, height: 100 }} />
