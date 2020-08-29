@@ -44,7 +44,7 @@ export default function App() {
         color="orange"
         onPress={() =>
           Alert.alert("My title", "My Message", [
-            { text: "Yes", onPress: () => console.log("yes pressed") },
+            { text: "Yes", onPress: () => console.log("yes pressed ") },
             { text: "No", onPress: () => console.log("No pressed") },
           ])
         }
